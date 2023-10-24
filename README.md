@@ -1,4 +1,4 @@
-This is a basic node js project template, which any one can you as starter template.
+This project is authentication submodule for airline booking system.
 
 ###  SETUP
 -Download this template from github and open it in your favourite text editor.
