@@ -7,12 +7,13 @@ const app = express();
 
 const limiter =  rateLimit({
     windowMs:2*60*1000,
-    max:3
+    max:30
 });
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(limiter)
+
 
 app.use('/searchService', createProxyMiddleware({
     target:ServerConfig.SEARCH_SERVICE,changeOrigin:true, 
